@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 1rem;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+}
+/* sidenav */
+/* Sidenav menu */
+.container {
+  filter: blur(8px);
+
+  
+}
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: hsl(36, 100%, 99%);
+  padding-top: 10rem;
+  transition: right 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 1rem 1rem 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: hsl(240, 100%, 5%);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  font-weight: 400;
+  top: -1rem;
+  right: 0.5rem;
+  font-size: 5rem;
+  color: hsl(240, 100%, 5%);
+}
+
+/* Icône burger */
+.hamburger {
+  display: block;
+ }
+ .menu {
+  display: none;
+ }
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.homeside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* First screen */
+#firstEcran {
+  margin-bottom: 4rem;
+  /* width: 100%; */
+}
+/* Bright container */
+#bright {
+  padding: 1rem;
+}
+#imgbri {
+  width: 100%;
+  display: block;
+  /* height: 0; */
+  padding-bottom: 100%;
+  background-repeat:no-repeat;
+  margin-bottom: 1rem;
+  background-image: url("./assets/images/image-web-3-mobile.jpg");
+  background-size: cover;
+}
+.textBright {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.pghbut {
+  font-size: 15px;
+}
+.btn {
+  display: inline-block;
+  background: hsl(5, 85%, 63%);
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  font-size: 0.8em;
+  margin: 0.8rem 0;
+}
+
+/* new container */
+#new {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1rem;
+  margin: 1rem;
+  color: hsl(36, 100%, 99%);
+}
+.title {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(236, 13%, 42%);
+}
+.subtitle {
+  font-weight: 700;
+}
+.subgroup {
+  margin: 1.5rem 0;
+}
+/* articles container */
+#articles {
+  margin: 1rem;
+}
+.group {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+.num {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.imgcard {
+  width: 28%;
+  height: 10%;
+}
+.titlenum {
+  font-weight: 800;
+}
+/* desktop screen */
+@media (min-width: 870px) {
+  header {
+    padding: 2rem 8rem 1rem;
+  }
+  #new {
+    width: 63%;
+    padding: 1rem 1rem 0rem;
+    margin: 1rem 1rem 2rem;
+  }
+  /* p {
+    font-size: 1.2rem;
+  } */
+  #firstEcran {
+    display: flex;
+    padding: 0rem 7rem;
+  }
+  #imgbri {
+    width: 100%;
+    padding-bottom: 40%;
+    background-image: url("./assets/images/image-web-3-desktop.jpg");
+  }
+.pghbut {
+  font-size: 15px;
+    margin: 0rem 1rem;
+    width: 42%;
+}
+  .textpic {
+    display: flex;
+    gap: 5rem;
+  }
+  .btn {
+    margin: 0.6rem 0 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+
+  }
+  .textBright {
+    width: 40%;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .subgroup {
+    margin: 1.8rem 0;
+  }
+  /* articles */
+  #articles {
+    display: flex;
+    padding: 0rem 7rem;
+    /* gap: 1rem; */
+  }
+  .imgcard {
+    height: 83%;
+  }
+  .containt {
+    padding: 1rem 3rem 0 0;
+  }
+ .hamburger {
+  display: none;
+ }
+ nav ul li a{
+  text-decoration: none;
+ }
+ nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+ }
+ .menu {
+  display: flex;
+ justify-content: space-between ;
+ }
+ 
+}
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
